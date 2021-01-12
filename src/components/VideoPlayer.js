@@ -18,6 +18,7 @@ const  VideoPlayerComp =()=> {
                <VideoPlayer 
                     autoplay={true}
                     key={video.id}
+                    resizeMode="cover"
                     style={styles.player}
                     video={{uri:video.uri}}
                />
@@ -36,6 +37,6 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         borderColor:'black',
         marginTop:10,
-        elevation:5
+        // elevation:5
     }
 })
